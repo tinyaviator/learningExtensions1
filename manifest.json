@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Rose Ad Blocker",
+  "version": "1.0",
+  "description": "Blocks ads in the background",
+  "permissions": ["scripting", "tabs", "activeTab", "management"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Rose Ad Blocker",
+    "default_popup": "popup.html",
+    "default_icon": "extensionIcon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
