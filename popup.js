@@ -18,6 +18,3 @@ function switchAdBlocker() {
 }
 
 document.getElementById("switchAdBlock").addEventListener("click", () => {switchAdBlocker()});
-
-const audio = new Audio('goats.mp3');
-audio.play();
