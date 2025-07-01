@@ -6,6 +6,9 @@ document.getElementById("theGoat").style.position = "absolute";
 document.getElementById("theGoat").style.top = "0px";
 document.getElementById("theGoat").style.left = ((window.innerWidth / 2) - window.innerWidth * 0.25) + "px";
 
+const audio = new Audio('goats.mp3');
+audio.play();
+
 var moveSpeed = Math.floor(Math.random() * 100) + 1;
 
 document.querySelectorAll("img").forEach((element) => {
